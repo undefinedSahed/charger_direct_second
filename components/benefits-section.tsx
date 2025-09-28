@@ -12,27 +12,25 @@ const benefits = [
 
 export default function BenefitsSection() {
   return (
-    <section className="benefits-dark py-20 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="relative">
-            <Image
-              src="/images/phone-powerbank.png"
-              alt="Phone and powerbank"
-              width={400}
-              height={400}
-              className="w-full max-w-md mx-auto"
-            />
-          </div>
+    <section className="text-white">
+      <div className="grid lg:grid-cols-3 w-full items-center rounded-3xl">
+        <div className="relative w-full lg:col-span-1">
+          <Image
+            src="/images/pp.png"
+            alt="Phone and powerbank"
+            width={400}
+            height={400}
+            className="w-full aspect-square lg:aspect-[5/7] object-cover"
+          />
+        </div>
 
-          <div className="space-y-6">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-center space-x-4">
-                <Zap className="w-6 h-6 text-yellow-400 flex-shrink-0" />
-                <span className="text-lg">{benefit}</span>
-              </div>
-            ))}
-          </div>
+        <div className="space-y-6 bg-[#1f1a44] h-full place-content-center lg:col-span-2 lg:pl-32 p-8">
+          {benefits.map((benefit, index) => (
+            <div key={index} className="flex items-center space-x-4">
+              <Zap className="w-6 h-6 text-white flex-shrink-0" fill="white" />
+              <span className="text-xl font-bold">{benefit}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>
