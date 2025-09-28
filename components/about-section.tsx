@@ -4,9 +4,9 @@ export default function AboutSection() {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          <div className="space-y-6">
-            <div className="space-y-2">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6 max-w-xl">
+            <div className="space-y-8">
               <p className="text-sm text-gray-500 uppercase tracking-wide">ABOUT US</p>
               <h2 className="text-4xl font-bold text-gray-900">
                 About
@@ -16,52 +16,23 @@ export default function AboutSection() {
             </div>
 
             <div className="space-y-4 text-gray-600">
-              <p>
-                Charger Direct is a British company that provides affordable powerbank rental services across the UK.
-                Our mission is to keep your devices charged wherever you go.
+              <p className="text-xl">
+                Charger Direct is a licensed power bank service providing power bank rental machines to hospitals and f&b venues across Britain.
               </p>
-              <p>
-                With our network of charging stations in hospitals, F&B venues, and other convenient locations, you'll
-                never have to worry about a dead battery again.
-              </p>
-              <p>
-                Our environmentally friendly solution promotes sustainability while offering the convenience and
-                reliability you need in today's connected world.
+              <p className="text-xl">
+                Our network of power bank stations are owned and operated directly by Charger Direct LTD.
               </p>
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="">
             <div className="space-y-4">
               <Image
-                src="/white-charging-station-kiosk.jpg"
+                src="/images/products.png"
                 alt="White charging station"
                 width={150}
                 height={200}
-                className="w-full rounded-lg"
-              />
-              <Image
-                src="/images/charging-stations-multiple.png"
-                alt="Multiple charging stations"
-                width={150}
-                height={200}
-                className="w-full rounded-lg"
-              />
-            </div>
-            <div className="space-y-4 pt-8">
-              <Image
-                src="/images/charging-station-black.png"
-                alt="Black charging station"
-                width={150}
-                height={200}
-                className="w-full rounded-lg"
-              />
-              <Image
-                src="/compact-white-charging-station.jpg"
-                alt="Compact charging station"
-                width={150}
-                height={200}
-                className="w-full rounded-lg"
+                className="w-full aspect-[5/4] object-cover rounded-lg"
               />
             </div>
           </div>

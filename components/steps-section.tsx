@@ -13,13 +13,13 @@ const steps = [
   },
   {
     number: "02",
-    title: "",
-    icon: "/images/image2.png",
+    title: "Find the nearest station on the map in the app",
+    icon: "/images/image3.png",
   },
   {
     number: "03",
-    title: "Find the nearest station on the map in the app",
-    icon: "/images/image3.png",
+    title: "",
+    icon: "/images/image2.png",
   },
   {
     number: "04",
@@ -52,26 +52,24 @@ export function StepsSection() {
               key={step.number}
               className="relative"
             >
-              {/* Connection Line (hidden on mobile) */}
-              {index < steps.length - 1 && (
-                <div
-                  className="hidden md:block absolute top-16 left-full w-full h-px bg-gradient-to-r from-primary/50 to-transparent z-0"
-                />
-              )}
-
               <div className="relative z-10">
                 {/* Step Card */}
                 <div
-                  className={`rounded-2xl flex w-full flex-col ${index % 2 === 0 ? "justify-end" : "justify-start"
-                    } p-8 h-full hover:border-primary/50 transition-colors duration-300 min-h-[450px]`}
+                  className={`rounded-2xl flex w-full flex-col ${index === 2 || index === 3 || index === 5 ? "justify-start" : "justify-end"
+                    } p-8 h-full hover:border-primary/50 transition-colors duration-300 min-h-[400px]`}
                   style={{
                     background: `url(${step.icon})`,
                     backgroundSize:
-                      index === 1 || index === 3 ? "contain" : "cover",
+                      index === 2 || index === 3 ? "contain" : "cover",
                     backgroundPosition: "center",
-                    // backgroundRepeat: "no-repeat",
+                    backgroundRepeat: "no-repeat",
                   }}
                 >
+                  {
+                    index === 2 && (
+                      <div className="absolute inset-0 bg-[#deddeb] h-full w-full -z-10 rounded-2xl"></div>
+                    )
+                  }
                   {" "}
                   {/* Step Number */}
                   <div

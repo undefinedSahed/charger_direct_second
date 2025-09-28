@@ -20,7 +20,7 @@ export default function BenefitsSection() {
             alt="Phone and powerbank"
             width={400}
             height={400}
-            className="w-full aspect-square lg:aspect-[5/7] object-cover"
+            className="w-full aspect-square lg:aspect-[5/6] object-cover"
           />
         </div>
 

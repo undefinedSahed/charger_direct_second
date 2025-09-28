@@ -2,8 +2,8 @@ import Header from "@/components/header"
 import HeroSection from "@/components/hero-section"
 import BenefitsSection from "@/components/benefits-section"
 import AboutSection from "@/components/about-section"
-import MapSection from "@/components/map-section"
 import { StepsSection } from "@/components/steps-section"
+import CoverageMapUK from "@/components/map-section"
 
 export default function HomePage() {
   return (
@@ -13,7 +13,7 @@ export default function HomePage() {
       <StepsSection />
       <BenefitsSection />
       <AboutSection />
-      <MapSection />
+      <CoverageMapUK />
     </main>
   )
 }

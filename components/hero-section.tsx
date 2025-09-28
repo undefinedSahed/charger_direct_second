@@ -13,13 +13,13 @@ export default function HeroSection() {
               <br />
               YOUR DEVICES
               <br />
-              <span className="text-purple-600">ANYWHERE</span>
+              <span className="">ANYWHERE</span>
             </h1>
 
             <p className="text-lg text-gray-600 max-w-md">The most affordable powerbank service in Britain.</p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-black text-white hover:bg-gray-800 px-12 py-6 rounded-lg">
+              <Button className="bg-black text-white hover:bg-gray-800 cursor-pointer px-12 py-6 rounded-lg">
                 <FaApple className="!w-5 !h-5" />
                 <div className="text-left">
                   <p className="text-xs opacity-80">Download on the</p>
@@ -28,7 +28,7 @@ export default function HeroSection() {
               </Button>
               <Button
                 variant="outline"
-                className="bg-black text-white hover:bg-gray-800 py-6 rounded-lg"
+                className="bg-black hover:bg-gray-800 hover:text-white text-white cursor-pointer py-6 rounded-lg"
               >
                 <Image src="/images/google-play.png" alt="Paly store" width={20} height={20} />
                 <div className="text-left">
