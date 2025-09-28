@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { FaApple } from "react-icons/fa";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -19,23 +20,12 @@ export default function HeroSection() {
             <p className="text-lg text-gray-600 max-w-md">The most affordable powerbank service in Britain.</p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-black text-white hover:bg-gray-800 cursor-pointer px-12 py-6 rounded-lg">
-                <FaApple className="!w-5 !h-5" />
-                <div className="text-left">
-                  <p className="text-xs opacity-80">Download on the</p>
-                  <p className="text-base">App Store</p>
-                </div>
-              </Button>
-              <Button
-                variant="outline"
-                className="bg-black hover:bg-gray-800 hover:text-white text-white cursor-pointer py-6 rounded-lg"
-              >
-                <Image src="/images/google-play.png" alt="Paly store" width={20} height={20} />
-                <div className="text-left">
-                  <p className="text-xs opacity-80">Get it on</p>
-                  <p className="text-base">Google Play</p>
-                </div>
-              </Button>
+              <Link href="https://apps.apple.com" target="_blank" className="">
+                <Image src="/images/appstore.jpeg" alt="App store" width={150} height={50} className="w-40 rounded-md h-12 object-cover" />
+              </Link>
+              <Link href="https://play.google.com/store/apps" target="_blank" className="">
+                <Image src="/images/palystore.jpeg" alt="Play store" width={150} height={50} className="w-40 rounded-md h-12 object-cover" />
+              </Link>
             </div>
           </div>
 

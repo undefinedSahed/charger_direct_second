@@ -21,8 +21,8 @@ export default function Header() {
                 src="/images/logo.png"
                 alt="Charger Direct Logo"
                 width={200}
-                height={50}
-                className="h-8 w-auto sm:h-10 md:h-12" // Made logo responsive
+                height={100}
+                className="w-53 lg:w-72 aspect-[5/2] object-contain" // Made logo responsive
               />
             </Link>
           </div>
