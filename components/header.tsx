@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 export default function Header() {
@@ -7,7 +8,12 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/" className="text-xl font-bold text-gray-900">
-              Charger D<span className="text-purple-600">i</span>rect
+              <Image
+                src="/images/logo.png"
+                alt="Charger Direct Logo"
+                width={200}
+                height={50}
+              />
             </Link>
           </div>
 
