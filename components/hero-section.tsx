@@ -1,6 +1,4 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { FaApple } from "react-icons/fa";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function HeroSection() {
@@ -9,7 +7,7 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight -mt-24">
               CHARGE
               <br />
               YOUR DEVICES
@@ -17,14 +15,32 @@ export default function HeroSection() {
               <span className="">ANYWHERE</span>
             </h1>
 
-            <p className="text-lg text-gray-600 max-w-md">The most affordable powerbank service in Britain.</p>
+            <p className="text-lg text-gray-600 max-w-md">
+              The most affordable powerbank service in Britain.
+            </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="https://apps.apple.com" target="_blank" className="">
-                <Image src="/images/appstore.jpeg" alt="App store" width={150} height={50} className="w-40 rounded-md h-12 object-cover" />
+                <Image
+                  src="/images/appstore.jpeg"
+                  alt="App store"
+                  width={150}
+                  height={50}
+                  className="w-40 rounded-md h-12 object-cover"
+                />
               </Link>
-              <Link href="https://play.google.com/store/apps" target="_blank" className="">
-                <Image src="/images/palystore.jpeg" alt="Play store" width={150} height={50} className="w-40 rounded-md h-12 object-cover" />
+              <Link
+                href="https://play.google.com/store/apps"
+                target="_blank"
+                className=""
+              >
+                <Image
+                  src="/images/palystore.jpeg"
+                  alt="Play store"
+                  width={150}
+                  height={50}
+                  className="w-40 rounded-md h-12 object-cover"
+                />
               </Link>
             </div>
           </div>
@@ -36,12 +52,12 @@ export default function HeroSection() {
                 alt="Blue powerbank with QR code"
                 width={400}
                 height={400}
-                className="w-full max-w-md mx-auto bg-blend-screen"
+                className="w-full max-w-md ms-auto bg-blend-screen"
               />
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
