@@ -7,7 +7,7 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight -mt-24">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight lg:-mt-24 -mt-10">
               CHARGE
               <br />
               YOUR DEVICES
@@ -19,7 +19,7 @@ export default function HeroSection() {
               The most affordable powerbank service in Britain.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-row gap-4">
               <Link href="https://apps.apple.com" target="_blank" className="">
                 <Image
                   src="/images/appstore.jpeg"
